@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background image */
+.bg-image {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Dark overlay */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.78);
+    z-index: -1;
+}
+
+/* Page center */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Help */
+.help {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* Signup Card */
+.signup-container {
+    width: 380px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(14px);
+    border-radius: 14px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+.signup-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Labels */
+.signup-container label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 6px;
+    color: #e0e0e0;
+}
+
+/* Inputs */
+.signup-container input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-size: 14px;
+}
+
+.signup-container input::placeholder {
+    color: #aaa;
+}
+
+/* Button */
+.signup-container button {
+    width: 100%;
+    padding: 14px;
+    background: #ff2d2d;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.signup-container button:hover {
+    background: #e60000;
+}
+
+/* Login link */
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #ccc;
+}
+
+.login-link span {
+    color: #fff;
+    cursor: pointer;
+}

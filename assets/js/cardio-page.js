@@ -113,3 +113,12 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(el);
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const logoutBtn = document.getElementById("logoutBtn");
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", () => {
+      // simple redirect on logout
+      window.location.href = "index.html";   // or "index.html" if you prefer
+    });
+  }
+});

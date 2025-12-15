@@ -65,3 +65,13 @@ const revealObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll(".reveal").forEach((el) => {
   revealObserver.observe(el);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const logoutBtn = document.getElementById("logoutBtn");
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", () => {
+      // simple redirect on logout
+      window.location.href = "index.html";   // or "index.html" if you prefer
+    });
+  }
+});
