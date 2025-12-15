@@ -1,0 +1,262 @@
+/* BOXING PAGE */
+
+/* Container helper */
+.container-1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HERO */
+.class-hero {
+  margin-top: 90px;
+  padding: 70px 0;
+  color: #ffffff;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+/* Dark maroon/boxing gradient */
+.boxing-hero {
+  background:
+    radial-gradient(circle at left, #4b000f 0%, #000 60%),
+    #000;
+}
+
+/* HERO CONTENT */
+.class-hero-content {
+  max-width: 540px;
+}
+
+.class-hero-content .badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.35);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.class-hero-content h1 {
+  font-size: clamp(32px, 4vw, 44px);
+  margin-bottom: 10px;
+}
+
+.class-hero-content .subtitle {
+  font-size: 14px;
+  color: #e4e4e4;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.hero-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  font-size: 13px;
+  color: #f1f1f1;
+}
+
+.hero-list li {
+  margin-bottom: 6px;
+}
+
+/* BOXING BUTTON */
+.bx-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 999px;
+  background: #ff4b4b;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  box-shadow: 0 10px 25px rgba(255, 75, 75, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.bx-btn:hover {
+  background: #d32323;
+  box-shadow: 0 14px 30px rgba(255, 75, 75, 0.55);
+  transform: translateY(-2px);
+}
+
+/* HERO IMAGE */
+.class-hero-image {
+  justify-self: center;
+}
+
+.class-hero-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 26px 60px rgba(0,0,0,0.7);
+}
+
+/* DETAILS */
+.class-details {
+  padding: 70px 0 60px;
+  background: #ffffff;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.class-details h2 {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+.class-details p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.details-card {
+  border-radius: 18px;
+  padding: 22px 20px;
+  background: #f8f8f8;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 18px 35px rgba(0,0,0,0.08);
+}
+
+.details-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.details-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.details-card ul li {
+  margin-bottom: 6px;
+}
+
+/* CTA */
+.class-cta {
+  padding: 70px 0 80px;
+  background: linear-gradient(135deg, #b00020, #000000);
+  color: #ffffff;
+}
+
+.class-cta-box {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.class-cta-box h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.class-cta-box p {
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+/* FOOTER – same pattern as other class pages */
+.main-footer {
+  background: #000;
+  color: #fff;
+}
+
+.footer-top {
+  padding: 40px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.footer-column p,
+.footer-column a {
+  font-size: 14px;
+  color: #f1f1f1;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #ff4b4b;
+}
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .class-hero {
+    margin-top: 80px;
+    padding: 60px 0 50px;
+    text-align: center;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .class-hero-content {
+    justify-self: center;
+  }
+
+  .class-hero-image img {
+    max-width: 360px;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .class-hero {
+    padding: 50px 0 40px;
+  }
+
+  .class-hero-image img {
+    max-width: 300px;
+  }
+
+  .details-card {
+    padding: 20px 18px;
+  }
+}
