@@ -1,25 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power World Gym</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <section class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="para">
-                    <p>hello everyone</p>
-                    </div>
-                </div>
-            </div>
+  <!-- ================= NAVBAR ================= -->
+  <header class="top-nav">
+    <div class="nav-container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="Power World Gym Logo">
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Logout -->
+      <div class="logout">Logout</div>
+
+      <!-- Hamburger -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#" class="mobile-logout">Logout</a>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero-section" id="home">
+    <div class="hero-content">
+      <h1>
+        Your <span>Fitness</span> Journey<br>
+        Starts Here.
+      </h1>
+
+      <p>
+        At Power World Gyms, we believe that fitness is not just a destination;
+        it's a journey towards a healthier you.
+      </p>
+
+      <a href="#contact" class="hero-btn">GET START</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="./assets/images/hero-man.png" alt="gym-man">
+    </div>
+  </section>
+
+  <!-- ============== WHY CHOOSE US ============== -->
+  <section class="why-section" id="why">
+    <div class="container-1200">
+      <h2 class="section-title">Why Choose Us</h2>
+      <p class="section-subtitle">
+        Exercise is defined as any physical activity that makes your muscles work
+        and requires your body to burn calories.
+      </p>
+
+      <div class="why-grid">
+        <div class="why-item">
+          <h3>Certified Trainers</h3>
+          <p>Work with experienced professionals who guide you safely to your goals.</p>
         </div>
-    </section>
-<script src="./assets/js/bootstrap.bundle.min.js"></script>
-<script src="./assets/js/script.js"></script>
+        <div class="why-item">
+          <h3>Personalized Programs</h3>
+          <p>Plans tailored to your body type, schedule, and fitness level.</p>
+        </div>
+        <div class="why-item">
+          <h3>Modern Equipment</h3>
+          <p>Train with high‑quality machines and free weights.</p>
+        </div>
+        <div class="why-item">
+          <h3>Supportive Community</h3>
+          <p>Stay motivated with a friendly and energetic environment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== OUR CLASSES ============== -->
+  <section class="classes-section" id="services">
+    <div class="container-1200">
+      <h2 class="section-title">Our Classes</h2>
+
+      <div class="classes-grid">
+        <div class="class-card">
+          <img src="./assets/images/class-1.jpg" alt="Cardio Workout">
+          <h3>Cardio Workouts</h3>
+        </div>
+        <div class="class-card">
+          <img src="./assets/images/class-2.webp" alt="Weight Lifting">
+          <h3>Weight Lifting</h3>
+        </div>
+        <div class="class-card">
+          <img src="./assets/images/class-3.webp" alt="Boxing">
+          <h3>Boxing</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PRICING ============== -->
+  <section class="pricing-section" id="pricing">
+    <h2 class="section-title">PRICE</h2>
+
+    <div class="price-grid">
+      <!-- Card 1 -->
+      <div class="price-card">
+        <h3>Beginner Plan</h3>
+        <p class="price">Rs.2000<span>/ Month</span></p>
+        <p class="desc">Perfect for getting started with a simple, consistent routine.</p>
+        <ul>
+          <li>1 weekly personal training session</li>
+          <li>Customized beginner‑friendly workout plan</li>
+          <li>Email support</li>
+          <li>Progress check once a month</li>
+        </ul>
+        <a href="#" class="price-btn">Choose Plan</a>
+      </div>
+
+      <!-- Card 2 (highlight) -->
+      <div class="price-card price-card--highlight">
+        <h3>Premium Plan</h3>
+        <p class="price">Rs.3000<span>/ Month</span></p>
+        <p class="desc">Best value for most members who want faster results.</p>
+        <ul>
+          <li>3 weekly personal training sessions</li>
+          <li>Workout + diet plan</li>
+          <li>WhatsApp support</li>
+          <li>Weekly progress tracking</li>
+          <li>Access to virtual gym tour exercises</li>
+        </ul>
+        <a href="#" class="price-btn">Choose Plan</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="price-card">
+        <h3>Premium Plan</h3>
+        <p class="price">Rs.5000<span>/ Month</span></p>
+        <p class="desc">For serious athletes needing maximum customization.</p>
+        <ul>
+          <li>5 weekly personal training sessions</li>
+          <li>Advanced custom workout program</li>
+          <li>Personalized nutrition plan</li>
+          <li>Unlimited WhatsApp support</li>
+          <li>Bi‑weekly progress assessment</li>
+          <li>Priority scheduling</li>
+        </ul>
+        <a href="#" class="price-btn">Choose Plan</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== TESTIMONIALS ============== -->
+  <section class="testimonials-section" id="about">
+    <div class="container-1200">
+      <h2 class="section-title">Your Opinions</h2>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-person">
+          <img src="./assets/images/client-1.jpg" alt="Client 1">
+          <p>“Power World Gym completely changed my lifestyle.”</p>
+          <span>- Rahul, Member</span>
+        </div>
+
+        <div class="testimonial-main">
+          <div class="stars">★★★★★</div>
+          <p>
+            “The trainers are supportive, the equipment is top class,
+            and the environment keeps me motivated every single day.”
+          </p>
+        </div>
+
+        <div class="testimonial-person">
+          <img src="./assets/images/client-2.jpg" alt="Client 2">
+          <p>“Best place to focus on real results.”</p>
+          <span>- Sneha, Member</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CONTACT ============== -->
+  <section class="contact-section" id="contact">
+    <div class="container-1200">
+      <h2 class="section-title">Feel Free to Contact Us</h2>
+
+      <form class="contact-form">
+        <div class="contact-row">
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email">
+          <input type="text" placeholder="Subject">
+        </div>
+
+        <textarea rows="5" placeholder="Your Message"></textarea>
+
+        <button type="submit" class="contact-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="main-footer">
+    <div class="container-1200 footer-grid">
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <p>Mon – Sat: 5:00 AM – 10:00 PM</p>
+        <p>Sun: 7:00 AM – 5:00 PM</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Location</h4>
+        <p>Power World Gym</p>
+        <p>Your Street, Your City</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <p><a href="#home">Home</a></p>
+        <p><a href="#services">Services</a></p>
+        <p><a href="#pricing">Pricing</a></p>
+        <p><a href="#contact">Contact</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Power World Gym. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
