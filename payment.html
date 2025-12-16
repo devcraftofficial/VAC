@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment - Power World Gym</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./assets/css/payment.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="checkout-header">
+      <div>
+        <h1>Checkout</h1>
+        <p class="checkout-sub">Complete your purchase for Power World Gym membership.</p>
+      </div>
+      <nav class="checkout-steps">
+        <span>Cart</span>
+        <span>›</span>
+        <span>Info</span>
+        <span>›</span>
+        <span>Shipping</span>
+        <span>›</span>
+        <span class="active-step">Payment</span>
+      </nav>
+    </header>
+
+    <!-- Top summary stripe -->
+    <section class="summary-bar">
+      <div class="summary-plan">
+        <span class="summary-label">Selected Plan</span>
+        <span id="planName" class="summary-value">Premium Plan</span>
+      </div>
+      <div class="summary-price">
+        <span class="summary-label">Amount</span>
+        <span id="planPrice" class="summary-value">Rs. 3000 / Month</span>
+      </div>
+    </section>
+
+    <main class="checkout-main">
+      <!-- Billing column -->
+      <section class="billing">
+        <h2>Billing Address</h2>
+
+        <label class="checkbox-row">
+          <input type="checkbox" checked>
+          <span>Default (Same As Billing Address)</span>
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox">
+          <span>Add An Alternative Delivery Address</span>
+        </label>
+
+        <form id="billingForm" class="billing-form">
+          <input type="text" id="fullName" placeholder="Full Name*" required>
+          <input type="email" id="email" placeholder="Email*" required>
+          <input type="text" id="country" placeholder="Country*" required>
+          <input type="text" id="address1" placeholder="Address Line 1*" required>
+          <input type="text" id="address2" placeholder="Address Line 2 (Optional)">
+          <div class="row">
+            <input type="text" id="city" placeholder="City / Suburb*" required>
+            <input type="text" id="postal" placeholder="ZIP / Postal Code*" required>
+          </div>
+          <input type="tel" id="phone" placeholder="Phone*" required>
+        </form>
+      </section>
+
+      <!-- Payment column -->
+      <section class="payment">
+        <h2>Payment</h2>
+
+        <p class="payment-label">Please choose your payment method</p>
+        <div class="payment-methods">
+          <button type="button" class="pay-method active" data-method="card">Card</button>
+          <button type="button" class="pay-method" data-method="paypal">PayPal</button>
+        </div>
+
+        <form id="paymentForm" class="payment-form">
+          <!-- Card details -->
+          <div id="cardSection">
+            <label>
+              Card Number*
+              <input type="text" id="cardNumber" maxlength="19" placeholder="1234 5678 9012 3456" required>
+            </label>
+
+            <div class="row">
+              <label class="small">
+                Expiry Date*
+                <div class="row small-row">
+                  <input type="text" id="expMonth" maxlength="2" placeholder="MM" required>
+                  <input type="text" id="expYear" maxlength="2" placeholder="YY" required>
+                </div>
+              </label>
+
+              <label class="small">
+                Security Code*
+                <input type="text" id="cvv" maxlength="4" placeholder="CVV" required>
+              </label>
+            </div>
+          </div>
+
+          <!-- PayPal note (only text, no real integration) -->
+          <div id="paypalSection" class="hidden paypal-note">
+            You will be redirected to PayPal to complete your secure payment. (Demo)
+          </div>
+
+          <button type="submit" class="pay-btn" id="payBtn">
+            Pay And Place Order
+          </button>
+
+          <p class="terms">
+            By clicking on “Pay And Place Order” you agree to make your purchase from Power World Gym
+            and confirm that your information is correct.
+          </p>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast">Payment successful! (demo)</div>
+
+  <script src="./assets/js/payment.js"></script>
+</body>
+</html>
