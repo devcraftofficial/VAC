@@ -10,7 +10,7 @@ function login() {
   const passwordInput = document.getElementById("password").value.trim();
 
   // Demo credentials
-  const validEmail = "rish@gmail.com";
+  const validEmail = "r@gmail.com";
   const validPassword = "12345";
 
   if (emailInput === validEmail && passwordInput === validPassword) {
