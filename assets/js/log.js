@@ -11,7 +11,7 @@ function login() {
 
   // Demo credentials
   const validEmail = "rish@gmail.com";
-  const validPassword = "123456";
+  const validPassword = "12345";
 
   if (emailInput === validEmail && passwordInput === validPassword) {
     // Redirect to home page (index.html)
